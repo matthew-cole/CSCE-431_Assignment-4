@@ -1,0 +1,22 @@
+<table summary='Book form fields'>
+  <tr>
+    <th>Title</th>
+    <td><%= f.text_field(:title) %></td>
+  </tr>
+  <tr>
+    <th>Author</th>
+    <td><%= f.text_field(:author) %></td>
+  </tr>
+  <tr>
+    <th>Genre</th>
+    <td><%= f.select(:genre, ['Fantasy', 'Sci-Fi', 'Nonfiction', 'Young Adult', 'Mystery', 'Horror', 'History', 'Tragedy']) %></td>
+  </tr>
+  <tr>
+    <th>Price</th>
+    <td><%= f.text_field(:price) %></td>
+  </tr>
+  <tr>
+    <th>Publication Date</th>
+    <td><%= f.date_select(:publish_date, start_year: 1850) %></td>
+  </tr>
+</table>
