@@ -1,0 +1,28 @@
+<%= link_to('<< Back to List', books_path, :class => 'back-link') %>
+
+<div class='show book'>
+  <h2>Show Book</h2>
+
+  <table summary='Book detail view'>
+    <tr>
+      <th>Title</th>
+      <td><%= @book.title %></td>
+    </tr>
+    <tr>
+      <th>Author</th>
+      <td><%= @book.author %></td>
+    </tr>
+    <tr>
+      <th>Genre</th>
+      <td><%= @book.genre %></td>
+    </tr>
+    <tr>
+      <th>Price</th>
+      <td><%= @book.price %></td>
+    </tr>
+    <tr>
+      <th>Publication Date</th>
+      <td><%= @book.publish_date %></td>
+    </tr>
+  </table>
+</div>
